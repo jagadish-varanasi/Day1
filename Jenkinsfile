@@ -2,7 +2,7 @@
 node('master') {
     stage('Git Clone') {
         git branch: 'master', changelog: true, url: 'https://github.com/vjagadishvaranasi/Day1.git'
-        sh "ls"
+        bat "ls"
     }
 
     stage('Project Name') {
@@ -13,8 +13,8 @@ node('master') {
     }
     
     stage('RUN Python Script') {
-        sh "chmod 777 hello-nmit.py"//sh refers to command script
-        sh "./hello-nmit.py"
+        bat "chmod 777 hello-nmit.py"//sh refers to command script
+        bat "./hello-nmit.py"
     }
 
 }
