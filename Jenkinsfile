@@ -2,7 +2,7 @@
 node('master') {
     stage('Git Clone') {
         git branch: 'master', changelog: true, url: 'https://github.com/vjagadishvaranasi/Day1.git'
-        bat "ls"
+
     }
 
     stage('Project Name') {
