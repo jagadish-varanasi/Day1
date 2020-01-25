@@ -14,7 +14,7 @@ node('master') {
     
     stage('RUN Python Script') {
         bat "hello-nmit.py"//sh refers to command script
-        bat "/hello-nmit.py"
+        python "hello-nmit.py"
     }
 
 }
