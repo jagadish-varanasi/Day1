@@ -12,9 +12,9 @@ node('master') {
         echo "Project name is ${projects.projects.project[0].name}"//first projects refers to above variable.and second project is of input.json
     }
     
-    stage('RUN Python Script') {
+  /*  stage('RUN Python Script') {
       SET PATH=%PATH%;%PYTHON_PATH% //sh refers to command script
         python "C:\Program Files (x86)\Jenkins\workspace\Jaga-dev@2\hello-nmit.py"
-    }
+    }*/
 
 }
