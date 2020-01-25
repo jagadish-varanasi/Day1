@@ -13,7 +13,7 @@ node('master') {
     }
     
     stage('RUN Python Script') {
-        bat "chmod 777 hello-nmit.py"//sh refers to command script
+        bat "hello-nmit.py"//sh refers to command script
         bat "./hello-nmit.py"
     }
 
