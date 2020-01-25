@@ -13,8 +13,8 @@ node('master') {
     }
     
     stage('RUN Python Script') {
-        bat "hello-nmit.py"//sh refers to command script
-        python "hello-nmit.py"
+      SET PATH=%PATH%;%PYTHON_PATH% //sh refers to command script
+        python "C:\Program Files (x86)\Jenkins\workspace\Jaga-dev@2\hello-nmit.py"
     }
 
 }
